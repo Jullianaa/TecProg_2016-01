@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories{
+    mavenCentral()
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion '22.0.1'
@@ -79,6 +83,10 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:0.2'
     androidTestCompile 'com.android.support.test:rules:0.2'
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.0'
+
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    compile group: 'com.h2database', name: 'h2', version: '1.4.192'
+
 }
 
 
